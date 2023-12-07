@@ -110,8 +110,8 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Dress: <span class="is-size-2"><span
-                  class="is-size-1">I</span>nstructing
+            <h1 class="title is-1 publication-title"> <img id="dress" width="5%" src="images/dress.png"> Dress:
+              <span class="is-size-2"><span class="is-size-1">I</span>nstructing
                 <span class="is-size-1">L</span>arge <span class="is-size-1">V</span>ision-Language <span
                   class="is-size-1">M</span>odels to <span class="is-size-1">A</span>lign and <span
                   class="is-size-1">I</span>nteract with <span class="is-size-1">H</span>umans via
@@ -146,32 +146,6 @@
             </div>
 
 
-
-
-            <!-- <div class="column has-text-centered">
-            <h3 class="title is-3 publication-title">Improved Baselines with Visual Instruction Fine-tuning</h3>
-            <div class="is-size-5 publication-authors">
-              <span class="author-block">
-                <a href="https://hliu.cc/" style="color:#f68946;font-weight:normal;">Haotian Liu<sup>*</sup></a>,
-              </span>
-              <span class="author-block">
-                <a href="https://chunyuan.li/" style="color:#008AD7;font-weight:normal;">Chunyuan Li<sup>*</sup></a>,
-              </span>
-              <span class="author-block">
-                <a href="https://yuheng-li.github.io" style="color:#008AD7;font-weight:normal;">Yuheng Li</a>,
-              </span>
-              <span class="author-block">
-                <a href="https://pages.cs.wisc.edu/~yongjaelee/" style="color:#f68946;font-weight:normal;">Yong Jae
-                  Lee</a>
-              </span>
-            </div>
-
-            <div class="is-size-5 publication-authors">
-              <span class="author-block"><b style="color:#f68946; font-weight:normal">&#x25B6 </b> University of
-                Wisconsin-Madison</b></span>
-              <span class="author-block"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> Microsoft Research</span>
-            </div> -->
-
             <div class="column has-text-centered">
               <div class="publication-links">
                 <span class="link-block">
@@ -194,17 +168,6 @@
                   </a>
                 </span>
 
-
-
-                <!-- <span class="link-block">
-                <a href="#"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                  </a>
-              </span> -->
               </div>
             </div>
           </div>
@@ -213,51 +176,49 @@
     </div>
   </section>
 
-  <!-- <section class="hero teaser">
-    <div class="container is-max-desktop">
-      <div class="hero-body">
-        <h4 class="subtitle has-text-centered">
-          🔥<span style="color: #ff3860">[NEW!]</span> LLaVA-1.5 achieves SoTA on 11 benchmarks, with just simple
-          modifications to the original LLaVA, utilizes all public data, completes training in ~1 day on a single 8-A100
-          node, and surpasses methods that use billion-scale data.
-          <br><br>
-          LLaVA represents a novel end-to-end trained large multimodal model that combines a vision encoder and Vicuna
-          for general-purpose visual and language understanding,
-          achieving impressive chat capabilities mimicking spirits of the multimodal GPT-4 and setting a new
-          state-of-the-art accuracy on Science QA.
-        </h4>
-      </div>
-    </div>
-  </section> -->
 
-  <section class="section" style="background-color:#efeff081">
-    <div class="container is-max-desktop" id="gradio">
-      <gradio-app src="https://llava.hliu.cc"></gradio-app>
-    </div>
-  </section>
+
 
   <section class="section" style="background-color:#efeff081">
     <div class="container is-max-desktop">
       <!-- Abstract. -->
+
+      <figure style="text-align: center;">
+        <div class="columns is-centered">
+          <div class="column">
+            <img id="teaser" width="50%" src="images/hello_figure_1.png">
+            <figcaption>
+              <p>
+                Consider two types of natural language feedback: Critique and Refinement. They are used to improve
+                alignment and interaction capabilities of the Large Vision Language Model (LVLM).
+              </p>
+            </figcaption>
+          </div>
+
+        </div>
+        <figcaption>
+        </figcaption>
+      </figure>
+
       <div class="columns is-centered has-text-centered">
         <div class="column is-six-fifths">
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              We present DRESS , a large vision language model (LVLM) that innovatively exploits Natural Language feed-
+              We present DRESS, a large vision language model (LVLM) that innovatively exploits Natural Language feed
               back (NLF) from Large Language Models to enhance its alignment and interactions by addressing two key
-              limitations in the state-of-the-art LVLMs. First, prior LVLMs gener- ally rely only on the instruction
+              limitations in the state-of-the-art LVLMs. First, prior LVLMs generally rely only on the instruction
               finetuning stage to enhance alignment with human preferences. Without incorporating extra feedback, they
               are still prone to generate unhelpful, hallucinated, or harmful responses. Second, while the visual
-              instruction tuning data is generally structured in a multi- turn dialogue format, the connections and
-              dependencies among consecutive conversational turns are weak. This re- duces the capacity for effective
+              instruction tuning data is generally structured in a multi-turn dialogue format, the connections and
+              dependencies among consecutive conversational turns are weak. This reduces the capacity for effective
               multi-turn interactions. To tackle these, we propose a novel categorization of the NLF into two key types:
               critique and refinement. The critique NLF identifies the strengths and weaknesses of the responses and is
               used to align the LVLMs with human preferences. The refinement NLF offers concrete suggestions for
-              improve- ment and is adopted to improve the interaction ability of the LVLMs– which focuses on LVLMs’
+              improvement and is adopted to improve the interaction ability of the LVLMs– which focuses on LVLMs’
               ability to refine responses by incorporating feedback in multi-turn interactions. To address the
               non-differentiable nature of NLF, we generalize conditional reinforcement learning for training. Our
-              experi- mental results demonstrate that DRESS can generate more helpful (9.76%), honest (11.52%), and
+              experimental results demonstrate that DRESS can generate more helpful (9.76%), honest (11.52%), and
               harmless (21.03%) responses, and more effectively learn from feedback during multi-turn interactions
               compared to SOTA LVMLs.
             </p>
@@ -270,6 +231,96 @@
   </section>
 
 
+  <section class="section">
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-six-fifths">
+        <h2 class="title is-3">Key Highlights</h2>
+      </div>
+    </div><!-- Key Contributions. -->
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <div class="content has-text-justified">
+          <ul>
+            <li><b>Rich Natural Language Feedback (NLF): </b>Categorize NLF into
+              critique and refinement
+              The critique NLF identifies the strengths and weaknesses of the responses. The refinement NLF offers
+              concrete suggestions for improvement. <span style="font-size: 95%;"></span></li>
+            <ul>
+              <li>
+                <b>Critique NLF: </b> Identifies the strengths and weaknesses of the responses.
+              </li>
+              <li>
+                <b>Refinement NLF: </b> Offers concrete suggestions for improvement.
+              </li>
+            </ul>
+            <li><b>Training: </b>To address the non-differentiable nature of NLF, we generalize conditional
+              reinforcement learning. We train DRESS to produce corresponding responses conditioned on the two NLF using
+              language modeling loss on the responses. <span style="font-size: 95%;"></span></li>
+
+            <li><b>Evaluation: </b>Systematic evaluation to show improvements over SOTA LVLMs on helpfulness, honesty
+              and harmlessless criteria. <span style="font-size: 95%;"></span></li>
+
+            <li><b>Dataset: </b>Open-source (1) 63K annotated vision-language NLF samples covering 3H aspects and (2) a
+              dataset with 4.7K examples for harmlessness alignment and evaluation of LVLMs. <span
+                style="font-size: 95%;"></span></li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-six-fifths">
+        <h2 class="title is-3">Details</h2>
+      </div>
+    </div><!-- Feedback. -->
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <div class="content has-text-justified">
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-six-fifths">
+        <h2 class="title is-3">Evaluation</h2>
+      </div>
+    </div><!-- Feedback. -->
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <div class="content has-text-justified">
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="section" id="Acknowledgement">
+    <div class="container is-max-desktop content">
+      <h2 class="title">Acknowledgement</h2>
+      <p>
+        This website is adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>, licensed under
+        a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+          Commons Attribution-ShareAlike 4.0 International License</a>.
+      </p>
 
 
 
