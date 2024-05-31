@@ -247,7 +247,7 @@
       <div class="column is-full-width">
         <div class="content has-text-justified">
           <ul>
-            <li><b>Limitation in Prior Work: </b> Current LVLMs lack alignment with human preferences and tend to
+            <li><b>Limitations in Prior Work: </b> Current LVLMs lack alignment with human preferences and tend to
               generate responses that hallucinate or are harmful. They also lack strong interaction capabilities due to
               weak connections among consecutive conversational turns.
             <li><b>Key idea: </b> Propose to use rich Natural Language Feedback (NLF) via RLAIF to improve LVLMs
@@ -265,7 +265,7 @@
               </li>
             </ul>
             <li><b>Training: </b>To address the non-differentiable nature of NLF, we generalize conditional
-              reinforcement learning. We train DRESS to produce corresponding responses conditioned on the two NLF using
+              reinforcement learning. We train DRESS to produce corresponding responses conditioned on the NLF using
               language modeling loss on the responses. <span style="font-size: 95%;"></span></li>
 
             <li><b>Evaluation: </b>Systematic evaluation to show improvements over SOTA LVLMs on helpfulness, honesty
@@ -307,6 +307,16 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-six-fifths">
         <h2 class="title is-3">Evaluation</h2>
+
+        <div class="column">
+          <width="50%" src="images/eval_helpful.png">
+            <figcaption>
+              <p>
+                Table shows the evaluation of DRESS on helpfulness, honesty and harmlessness criteria.
+              </p>
+            </figcaption>
+        </div>
+
       </div>
     </div><!-- Feedback. -->
 
