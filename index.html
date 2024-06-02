@@ -188,22 +188,22 @@
       <figure style="text-align: center;">
         <div class="columns is-centered">
           <div class="column">
-            <img id="teaser" width="50%" src="images/hello_figure_1.png">
-            <img id="teaser" width="50%" src="images/hello_figure_2.png">
+            <div style="display: flex; justify-content: center;">
+              <img id="teaser" style="width: 50%;" src="images/hello_figure_1.png">
+              <img id="teaser" style="width: 50%;" src="images/hello_figure_2.png">
+            </div>
             <figcaption>
               <p>
-                <b>DRESS</b> improvers the alignment and interaction capabilities of Large Vision Language Models (LVLM)
+                <b>DRESS</b> improves the alignment and interaction capabilities of Large Vision Language Models (LVLM)
                 by
                 proposing to use rich Natural Language Feedback (NLF) via Reinforcement Learning based on AI Feedback
-                (RLAIF). DRESS categorizes NLF into two Critique and Refinement.
+                (RLAIF). DRESS categorizes NLF into two: Critique and Refinement.
               </p>
             </figcaption>
           </div>
-
         </div>
-        <figcaption>
-        </figcaption>
       </figure>
+
 
       <div class="columns is-centered has-text-centered">
         <div class="column is-six-fifths">
@@ -250,7 +250,7 @@
           <ul>
             <li><b>Limitations in Prior Work: </b> Current LVLMs lack alignment with human preferences and tend to
               generate responses that hallucinate or are harmful. They also lack strong interaction capabilities due to
-              weak connections among consecutive conversational turns.
+              weak dependencies among consecutive conversational turns in the training data.
             <li><b>Key idea: </b> Propose to use rich Natural Language Feedback (NLF) via RLAIF to improve LVLMs
               Categorize NLF into
               critique and refinement.
