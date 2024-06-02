@@ -251,11 +251,11 @@
             <li><b>Limitations in Prior Work: </b> Current LVLMs lack alignment with human preferences and tend to
               generate responses that hallucinate or are harmful. They also lack strong interaction capabilities due to
               weak dependencies among consecutive conversational turns in the training data.
-            <li><b>Key idea: </b> Propose to use rich Natural Language Feedback (NLF) via RLAIF to improve LVLMs
+            <li><b>Key idea: </b> Propose to use rich Natural Language Feedback (NLF) via RLAIF to improve LVLMs.
               Categorize NLF into
               critique and refinement.
-              The critique NLF identifies the strengths and weaknesses of the responses.
-              The refinement NLF offers
+              The critique NLF identifies the strengths and weaknesses of the responses and
+              the refinement NLF offers
               concrete suggestions for improvement. <span style="font-size: 95%;"></span></li>
             <ul>
               <li>
@@ -269,9 +269,6 @@
               reinforcement learning. We train DRESS to produce corresponding responses conditioned on the NLF using
               language modeling loss on the responses. <span style="font-size: 95%;"></span></li>
 
-            <li><b>Evaluation: </b>Systematic evaluation to show improvements over SOTA LVLMs on helpfulness, honesty
-              and harmlessless criteria. <span style="font-size: 95%;"></span></li>
-
             <li><b>Dataset: </b>Open-source (1) 63K annotated vision-language NLF samples covering 3H aspects and (2) a
               dataset with 4.7K examples for harmlessness alignment and evaluation of LVLMs. <span
                 style="font-size: 95%;"></span></li>
@@ -284,25 +281,6 @@
     </div>
   </section>
 
-
-  <section class="section">
-
-    <!-- please make all buttons orange, including this one! 
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-six-fifths">
-        <h2 class="title is-3">Details</h2>
-      </div>
-    </div>-->
-
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <div class="content has-text-justified">
-
-        </div>
-
-      </div>
-    </div>
-  </section>
 
   <section class="section">
 
